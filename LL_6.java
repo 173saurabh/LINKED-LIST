@@ -23,6 +23,13 @@ public class LL_6
     {
         Node prev=null,n=head;
         int count=0;
+        if(n==null)
+            return;
+        if(n!=null && count==position)
+        {
+            head=n.next;
+            return;
+        }
         while(n!=null && count!=position)
         {
             prev=n;
